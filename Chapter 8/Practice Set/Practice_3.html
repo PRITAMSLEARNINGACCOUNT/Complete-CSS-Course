@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solution 3</title>
+    <style>
+      .Container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: black;
+      }
+      .Container img {
+        height: 200px;
+        width: 200px;
+        animation: Rotation 3s ease-in  infinite  ;
+      }
+      @keyframes Rotation {
+        0% {
+          transform: rotate(90deg);
+        }
+        50% {
+          transform: rotate(180deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Container">
+      <img
+        src="https://1000logos.net/wp-content/uploads/2020/09/CSS-Logo.jpg"
+        alt="DemoImage"
+      />
+    </div>
+  </body>
+</html>

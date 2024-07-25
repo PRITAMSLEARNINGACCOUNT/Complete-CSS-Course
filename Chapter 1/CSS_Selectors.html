@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+      * {
+        /* Universal Selector */
+
+        background-color: black;
+        color: white;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        color: white;
+        background-color: blue;
+      }
+      .class {
+        background-color: red;
+        color: yellow;
+      }
+      #id {
+        background-color: aqua;
+        color: black;
+      }
+      h2,
+      h3,
+      h4 {
+        background-color: yellow;
+        color: black;
+      }
+      p.ECS {
+        background-color: bisque;
+        color: violet;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Element Selector</h1>
+    <div class="class">Class Selector</div>
+    <div id="id">Id Selector</div>
+    <h2>Group Selection Element 1</h2>
+    <h3>Group Selection Element 2</h3>
+    <h4>Group Selection Element 3</h4>
+    <p class="ECS">Element Class Selector (Written Under A Paragraph Tag)</p>
+    <p>
+      Normal Text To Demonstrate The Element Class Selector Properly(Written
+      Under A Paragraph Tag)
+    </p>
+  </body>
+</html>

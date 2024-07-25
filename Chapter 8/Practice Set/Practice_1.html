@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solution 1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .ProgressBar {
+        height: 3px;
+        background-color: red;
+        animation: Progress 5s ease 0.5s infinite;
+      }
+      @keyframes Progress {
+        0% {
+          width: 0%;
+        }
+        25% {
+          width: 25%;
+        }
+        50% {
+          width: 50%;
+        }
+        75% {
+          width: 75%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ProgressBar"></div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!-- Also JavaScript Required For Better Solution - This Solution Is Temporary And Not Completely Satisfactory -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solution 2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .ProgressBar {
+        height: 3px;
+        background-color: red;
+        width: 0%;
+        visibility: visible;
+        transition: width 5s ease-in-out 0.5s, visibility 0.5s; 
+      }
+
+      .Container {
+        background: black;
+        height: 99vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .Container button {
+        padding: 10px 20px;
+        background: red;
+        color: white;
+        cursor: pointer;
+        border-radius: 1vw;
+        font-size: xx-large;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ProgressBar"></div>
+
+    <div class="Container">
+      <button onclick="Progress()">Start Progress</button>
+    </div>
+
+    Just Testing Out
+    <script>
+      let progressBar = document.querySelector(".ProgressBar");
+      async function Progress() {
+        progressBar.style.visibility = "visible";
+        progressBar.style.width = "0%";
+        progressBar.style.width = "50%";
+        progressBar.style.width = "100%";
+        await setTimeout(() => {
+          progressBar.style.visibility = "hidden";
+          progressBar.style.width = "0%";
+        }, 5000);
+      }
+    </script>
+  </body>
+</html>

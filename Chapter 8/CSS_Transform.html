@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transform</title>
+    <style>
+      .Container_1 {
+        height: 80vh;
+        width: 95vw;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      #Box_1 {
+        /* Below Transform Properties Can Be Given In Three Dimensional */
+        transform: rotate(45deg);
+        transform-origin: left top;
+      }
+      /* Below Transform Properties Can Also Be Given With Two Axis */
+      #Box_2 {
+        transform: scale(1.5);
+      }
+      #Box_4 {
+        transform: skew(30deg);
+      }
+      #Box_5 {
+        transform: translate(50px, 50px);
+      }
+      .Box {
+        background-color: aqua;
+        height: 100px;
+        width: 40vw;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Container_1">
+      <h2>2D Transform</h2>
+
+      <div class="box">
+        <div id="Box_1" class="Box">Box 1</div>
+        <div id="Box_2" class="Box">Box 2</div>
+        <div id="Box_3" class="Box">Box 3</div>
+        <div id="Box_4" class="Box">Box 4</div>
+        <div id="Box_5" class="Box">Box 5</div>
+      </div>
+    </div>
+  </body>
+</html>

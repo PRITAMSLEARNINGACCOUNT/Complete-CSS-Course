@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relative Lengths - CSS</title>
+    <style>
+      h1 {
+        font-size: 2rem;
+      }
+      div {
+        width: 50vw;
+        height: 50vh;
+        background-color: lightblue;
+      }
+      div > div {
+        width: 50%;
+        height: 50%;
+        background-color: lightgreen;
+      }
+      div > p {
+        font-size: 3em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>REM Is Used For The Font Size In This Heading</h1>
+    <div>
+      VW and VH is used for the height and width measurements in this division.
+      <p>EM is used to determine the size of font in this paragraph</p>
+      <div>
+        Percentages are used for the height and width measurements in this
+        division.
+      </div>
+    </div>
+  </body>
+</html>

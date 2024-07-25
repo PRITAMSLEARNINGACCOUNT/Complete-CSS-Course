@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The CSS Flexbox</title>
+    <style>
+      .Container_1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row; /* Default value Of Flex Direction In A CSS Flexbox */
+      }
+
+      .Box_1 {
+        height: 50vh;
+        width: 30%;
+        background-color: red;
+      }
+      .Box_2 {
+        height: 50vh;
+        width: 30%;
+        background-color: blue;
+      }
+      .Container_2 {
+        font-size: 0.8vw;
+        height: 100vh;
+        background-color: aqua;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+      }
+      .Universal_Box_Style {
+        height: 30vh;
+        width: 30%;
+        background-color: green;
+      }
+      #Flex_Content_1 {
+        order: 1;
+      }
+      #Flex_Content_2 {
+        order: 2;
+      }
+      .Container_3 {
+        display: flex;
+        height: 100vh;
+        background: black;
+      }
+      .Flex_Content {
+        height: 50vh;
+        width: 30%;
+        background-color: yellow;
+        border: 2px solid black;
+        box-sizing: border-box;
+      }
+      #Flex_Box_1 {
+        flex-grow: 3;
+      }
+      #Flex_Box_2 {
+        align-self: flex-end;
+        flex-shrink: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Container_1">
+      <div class="Box_1"></div>
+      <div class="Box_2"></div>
+    </div>
+    <div class="Container_2">
+      <div id="Flex_Content_1" class="Universal_Box_Style">
+        <h1>Flex Content 1</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto atque
+        perspiciatis esse animi veritatis in expedita ea aut, necessitatibus vel
+        provident, dolorem quas, autem ab alias asperiores aliquid saepe qui.
+        Quod inventore vero error iure ullam, fugiat alias ab repellendus esse!
+        Earum porro quos illo at ipsa, a nulla? Exercitationem laudantium,
+        nostrum quibusdam quidem sit voluptatum, placeat sunt voluptates facere
+        velit enim perferendis, excepturi blanditiis non dolorum. Dolorem omnis,
+        totam odit, quasi ad facilis tempore similique, autem nobis mollitia qui
+        necessitatibus cum quos sequi placeat? Dolorum soluta optio expedita,
+        quis unde qui sunt quasi quia ad cumque recusandae sit repellendus!
+      </div>
+      <div id="Flex_Content_2" class="Universal_Box_Style">
+        <h1>Flex Content 2</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto atque
+        perspiciatis esse animi veritatis in expedita ea aut, necessitatibus vel
+        provident, dolorem quas, autem ab alias asperiores aliquid saepe qui.
+        Quod inventore vero error iure ullam, fugiat alias ab repellendus esse!
+        Earum porro quos illo at ipsa, a nulla? Exercitationem laudantium,
+        nostrum quibusdam quidem sit voluptatum, placeat sunt voluptates facere
+        velit enim perferendis, excepturi blanditiis non dolorum. Dolorem omnis,
+        totam odit, quasi ad facilis tempore similique, autem nobis mollitia qui
+        necessitatibus cum quos sequi placeat? Dolorum soluta optio expedita,
+        quis unde qui sunt quasi quia ad cumque recusandae sit repellendus!
+      </div>
+      <div class="Universal_Box_Style">
+        <h1>Flex Content 3</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto atque
+        perspiciatis esse animi veritatis in expedita ea aut, necessitatibus vel
+        provident, dolorem quas, autem ab alias asperiores aliquid saepe qui.
+        Quod inventore vero error iure ullam, fugiat alias ab repellendus esse!
+        Earum porro quos illo at ipsa, a nulla? Exercitationem laudantium,
+        nostrum quibusdam quidem sit voluptatum, placeat sunt voluptates facere
+        velit enim perferendis, excepturi blanditiis non dolorum. Dolorem omnis,
+        totam odit, quasi ad facilis tempore similique, autem nobis mollitia qui
+        necessitatibus cum quos sequi placeat? Dolorum soluta optio expedita,
+        quis unde qui sunt quasi quia ad cumque recusandae sit repellendus!
+      </div>
+      <div class="Universal_Box_Style">
+        <h1>Flex Content 4</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto atque
+        perspiciatis esse animi veritatis in expedita ea aut, necessitatibus vel
+        provident, dolorem quas, autem ab alias asperiores aliquid saepe qui.
+        Quod inventore vero error iure ullam, fugiat alias ab repellendus esse!
+        Earum porro quos illo at ipsa, a nulla? Exercitationem laudantium,
+        nostrum quibusdam quidem sit voluptatum, placeat sunt voluptates facere
+        velit enim perferendis, excepturi blanditiis non dolorum. Dolorem omnis,
+        totam odit, quasi ad facilis tempore similique, autem nobis mollitia qui
+        necessitatibus cum quos sequi placeat? Dolorum soluta optio expedita,
+        quis unde qui sunt quasi quia ad cumque recusandae sit repellendus!
+      </div>
+    </div>
+
+    <div class="Container_3">
+      <div class="Flex_Content" id="Flex_Box_1"></div>
+      <div class="Flex_Content" id="Flex_Box_2"></div>
+      <div class="Flex_Content"></div>
+      <div class="Flex_Content"></div>
+      <div class="Flex_Content"></div>
+    </div>
+  </body>
+</html>

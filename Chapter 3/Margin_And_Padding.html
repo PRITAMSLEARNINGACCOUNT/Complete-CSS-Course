@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin & Padding</title>
+    <style>
+      .Container_1 {
+        height: 20vh;
+        width: 20vw;
+        margin: 20px;
+        padding: 20px;
+        background-color: aquamarine;
+      }
+      .Container_2 {
+        height: 20vh;
+        width: 20vw;
+        margin: 20px 20px 30px 30px;
+        /* 
+        Equivalent CSS
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        */
+        padding: 10px 20px 10px 20px;
+        /* 
+        Equivalent CSS
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        */
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Margin Collapse Is Happening Between The Below Two Div's -->
+    <div class="Container_1"></div>
+    <div class="Container_2"></div>
+  </body>
+</html>

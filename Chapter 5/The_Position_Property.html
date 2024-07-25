@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Position Property - CSS</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        position: relative;
+        background-color: rgb(74, 202, 39);
+        width: 200px;
+        height: 200px;
+      }
+      .Box_1 {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        background-color: lightblue;
+        width: 200px;
+        height: 200px;
+      }
+      header {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+      }
+      nav ul li {
+        display: inline;
+        color: white;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+      }
+      .Container {
+        position: static; /* Default Position Property Of Every Element - Won't Have Affect Of Any Top,Bottom,Left,Right or z-index */
+        height: 1000px;
+        background-color: rgb(58, 39, 202);
+      }
+      .Logo {
+        border-radius: 20px;
+        background-color: aqua;
+        width: 100px;
+        height: 100px;
+        position: fixed;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <div class="Box_1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
+        molestias, autem exercitationem in eius, recusandae ipsam perspiciatis
+      </div>
+    </div>
+    <div class="Container">
+      <div class="Logo"></div>
+    </div>
+  </body>
+</html>

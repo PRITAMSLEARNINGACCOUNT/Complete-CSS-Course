@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solution 2 - First Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: black;
+        color: white;
+        /* padding: 2vh; */
+        height: 10vh;
+      }
+      header nav .Logo {
+        width: 2vw;
+        height: 2vw;
+        background: yellow;
+        border-radius: 2vw;
+      }
+      header nav {
+        display: grid;
+        grid-template-columns: 2vw 30vh;
+        align-content: center;
+        height: 100%;
+        grid-column-gap: 1vw;
+      }
+      ul {
+        display: grid;
+        grid-template-columns: repeat(3, 10vh);
+        list-style-type: none;
+        align-content: center;
+        height: 100%;
+      }
+      main {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(2, 30vw);
+      }
+      main .Container_1 {
+        background-color: #ed2323;
+        height: 90vh;
+      }
+      main .Container_2 {
+        background-color: #2348ed;
+        height: 90vh;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="Logo"></div>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="Container_1"></div>
+      <div class="Container_2"></div>
+    </main>
+  </body>
+</html>

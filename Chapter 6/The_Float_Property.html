@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float Property - CSS</title>
+    <style>
+      .Container_1 {
+        height: 50vh;
+        width: 100%;
+      }
+      .Container_2 {
+        height: 50vh;
+        width: 100%;
+      }
+      .Box_1 {
+        height: 100%;
+        width: 50%;
+        background-color: red;
+        float: left;
+      }
+      .Box_2 {
+        height: 100%;
+        width: 50%;
+        background-color: blue;
+        float: right;
+      }
+      .Box_3 {
+        height: 100%;
+        width: 50%;
+        background-color: green;
+        float: right;
+      }
+      .Box_4 {
+        height: 100%;
+        width: 50%;
+        background-color: yellow;
+        float: left;
+        clear: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Container_1">
+      <div class="Box_1"></div>
+      <div class="Box_2"></div>
+    </div>
+    <div class="Container_2">
+      <div class="Box_3"></div>
+      <div class="Box_4"></div>
+    </div>
+  </body>
+</html>

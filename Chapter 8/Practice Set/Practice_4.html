@@ -1,0 +1,84 @@
+
+<!-- High JavaScript Knowledge Required To Complete This Solution - So This Solution Is Incomplete -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solution 4</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .Container {
+        background-color: black;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode;a */
+        animation: SlidingImages 5s ease-in-out 1s infinite;
+      }
+      #Image_3 {
+        transform: translateX(40vw);
+        animation: SlidingImages_2 5s ease-in-out 5s 1;
+      }
+      #Image_1 {
+        transform: translateX(-40vw);
+      }
+      #Image_2 {
+        animation: SlidingImages_1 5s ease-in-out 1s 1;
+      }
+      .Image {
+        height: 40vh;
+        width: 60vw;
+      }
+      @keyframes SlidingImages_1 {
+        0% {
+          transform: translateX(10vw);
+        }
+        50% {
+          transform: translateX(-20vw);
+        }
+        100% {
+          transform: translateX(-40vw);
+        }
+      }
+      @keyframes SlidingImages_2 {
+        0% {
+          transform: translateX(40vw);
+        }
+        50% {
+          transform: translateX(20vw);
+        }
+        100% {
+          transform: translateX(10vw);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Container">
+      <img
+        src="https://plus.unsplash.com/premium_photo-1673448760651-7e1e6fd79e40?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2FscGFwZXJ8ZW58MHx8MHx8fDA%3D"
+        alt="SliderImage_1"
+        id="Image_1"
+        class="Image"
+      />
+      <!-- 34vw -->
+      <img
+        src="https://preview.redd.it/tn0k20exrnb51.jpg?auto=webp&s=ec2c06c712dc1492a1d36027dfdabbcbf49c5fbc"
+        alt="SliderImage_2"
+        id="Image_2"
+        class="Image"
+      />
+      <img
+        src="https://blogger.googleusercontent.com/img/a/AVvXsEh16ZmNnnuuoNmXuf9B_Yny-qC6IKX3sXz08dhAjydrj9w8001zplc3gIVbMWdzu659oH1P0BkAG1_4FepY6fOiCq_TG90nKg1QSC9MGay_RXakXKe1zjz9ZbRXzOW34RUFH9KKqxIWqg643Go328_AmQvHH4cj4lTu2XzMq_MDbWwk3PMhhdDicxeCaJji"
+        alt="SliderImage_3"
+        id="Image_3"
+        class="Image"
+      />
+    </div>
+  </body>
+</html>

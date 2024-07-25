@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solution 2 - Second Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: black;
+        color: white;
+        /* padding: 2vh; */
+        height: 10vh;
+      }
+      header nav .Logo {
+        width: 2vw;
+        height: 2vw;
+        background: yellow;
+        border-radius: 2vw;
+      }
+      header nav {
+        display: grid;
+        grid-template-columns: 2vw 30vh;
+        align-content: center;
+        height: 100%;
+        grid-column-gap: 1vw;
+        justify-content: space-between;
+      }
+      ul {
+        display: grid;
+        grid-template-columns: repeat(3, 10vh);
+        list-style-type: none;
+        align-content: center;
+        height: 100%;
+      }
+      main {
+        height: 91vh;
+      }
+      main .Container_1 {
+        background-image: url("./Bg-image.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 50%;
+        width: 100%;
+      }
+      main .Container_2 {
+        background-color: #2348ed;
+        height: 50%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 15vw 15vw 15vw;
+        grid-template-rows: auto;
+        justify-content: center;
+        grid-column-gap: 1vw;
+      }
+      main .Container_2 .Images {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="Logo"></div>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="Container_1"></div>
+      <div class="Container_2">
+        <img src="./Image_1.jpg" alt="Image_1" class="Images" />
+        <img src="./Image_2.jpg" alt="Image_2" class="Images" />
+        <img src="./Image_3.jpg" alt="Image_3" class="Images" />
+      </div>
+    </main>
+  </body>
+</html>
